@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Compras</title>
+      
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Mis Compras" />
+        <meta property="og:description" content="Lista de mis compras" />
+        <meta property="og:image" content="https://demo-carrito-compras.vercel.app/resources/logo.png" />
+        <meta property="og:url" content="https://demo-carrito-compras.vercel.app/" />
+        <meta property="og:type" content="website" />
+      
+        <!-- Favicon and Styles -->
+        <link rel="icon" type="image/png" href="./resources/favicon.png" />
+        <link rel="stylesheet" href="style.css" />
+   
+      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <meta property="og:title" content="Mis Compras"></meta>
+    <meta property="og:description" content="Lista de mis compras"></meta>
+    <meta property="og:image" content="https://demo-carrito-compras.vercel.app/resources/logo.png"></meta>
+    <meta property="og:url" content="https://demo-carrito-compras.vercel.app/"></meta>
+    <meta property="og:type" content="website"></meta>
+    <link rel="icon" type="image/png" href="./resources/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3 style="width: 320px;"> Carrito de Compras </h3>
+    <section id="carrito">
+        <div>
+            <button id="carrito_btAgregarProducto">Agregar Producto</button>
+        </div>
+    </section>
+    <section style="font-size: 10px;">
+        <h3>Productos A Comprar</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 120px;">Nombre</th>
+                    <th style="width: 80px;">Cantidad</th>
+                    <th style="width: 80px;">Precio</th>
+                    <th style="width: 80px;">Envio</th>
+                </tr>
+            </thead>
+            <tbody id="carrito_divProductosRegistrados"></tbody>
+        </table>
+    </section>
+    <script type="module">
+        import Cl_index from "./dist/Cl_index.js";
+        new Cl_index();
+    </script>
+</body>
+</html>

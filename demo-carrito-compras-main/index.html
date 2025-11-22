@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Mis Compras" />
+    <meta property="og:description" content="Lista de mis compras" />
+    <meta property="og:image" content="https://carritodecomprav2.vercel.app/resources/logo.png" />
+    <meta property="og:url" content="https://carritodecomprav2.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon and Styles -->
+    <link rel="icon" type="image/png" href="./resources/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h3 style="width: 320px;">Carrito de Compras</h3>
+    </header>
+
+    <main>
+        <section id="carrito">
+            <button id="carrito_btAgregarProducto">Agregar Producto</button>
+        </section>
+
+        <section style="font-size: 10px;">
+            <h3>Productos A Comprar</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 120px;">Nombre</th>
+                        <th style="width: 80px;">Cantidad</th>
+                        <th style="width: 80px;">Precio</th>
+                        <th style="width: 80px;">Envío</th>
+                    </tr>
+                </thead>
+                <tbody id="carrito_divProductosRegistrados"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script type="module">
+        import Cl_index from "./dist/Cl_index.js";
+        new Cl_index();
+    </script>
+</body>
+</html>
